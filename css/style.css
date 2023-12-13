@@ -1,0 +1,109 @@
+* {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    /* Small */
+@media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    /* Medium */
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+    /* Large */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+
+    /****start page ***/
+   .page{
+      padding: 100px;
+      background-color:hsl(210, 46%, 95%);
+    }
+
+   .container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+   gap: 20px;
+   
+   }
+   @media (max-width:767px) {
+      .container {
+       display: flex;
+       flex-direction: column;
+    }
+    .page{
+      padding: 30px;
+    }
+}
+  .container .boxx{
+      grid-column: 1 / span 2;
+      background-color:  hsl(263, 55%, 52%);
+      border-radius: 5px;
+   } 
+   .container .boox{
+      grid-column: 2 / span 2 ;
+      background-color: hsl(219, 29%, 14%);
+      border-radius: 5px;
+   } 
+   .container .boxs{
+      grid-row: span 2 ;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 5px;
+     
+   } 
+   .container .box {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 5px;
+   }
+   .container img{
+      margin: 30px;
+      border-radius: 50%;
+      border: 2px solid hsl(0, 0%, 81%);
+   }
+   .container h2 ,
+   .container span{
+      margin-left: 99px;
+      margin-top: -82px;
+      color: hsl(0, 0%, 100%);
+   }
+   .container span{
+      opacity: 0.5;
+   }
+   .container h2 {
+      font-size: 25px;
+      margin-bottom: 1px;
+   }
+   .container p{
+      padding: 10px;
+      color: white;
+      opacity: 0.5;
+   }
+   .container  .pp{
+      padding: 10px;
+      color: hsl(0, 0%, 100%);
+      font-size: 20px;
+      font-weight: 500;
+      opacity: 1;
+   }
+   .container .boxs p,
+   .container .boxs h2,
+   .container .boxs span{
+      color: #000;
+   }
+   .container .boxs p{
+      line-height: 1.7;
+   }
